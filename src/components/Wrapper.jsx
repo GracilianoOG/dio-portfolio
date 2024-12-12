@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const WrapperStyled = styled.div`
@@ -9,5 +8,9 @@ const WrapperStyled = styled.div`
 function Wrapper({ children }) {
   return <WrapperStyled>{children}</WrapperStyled>;
 }
+
+Wrapper.propTypes = {
+  children: PropTypes.node,
+};
 
 export default Wrapper;
