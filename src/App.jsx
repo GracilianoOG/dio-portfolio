@@ -2,6 +2,7 @@ import GlobalStyled from "./components/GlobalStyled";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+import Content from "./components/Content";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <GlobalStyled />
       <Wrapper>
         <Header />
+        <Content />
         <Footer />
       </Wrapper>
     </>
