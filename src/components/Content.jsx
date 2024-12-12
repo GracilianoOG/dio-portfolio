@@ -1,16 +1,9 @@
-import styled from "styled-components";
-import photo from "../assets/images/photo.jpg";
-
-const Photo = styled.img`
-  width: 100%;
-`;
+import AboutSection from "./AboutSection";
 
 function Content() {
   return (
     <main>
-      <section id="about">
-        <Photo src={photo} alt="" />
-      </section>
+      <AboutSection />
     </main>
   );
 }
