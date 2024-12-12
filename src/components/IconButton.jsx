@@ -5,6 +5,10 @@ import Icon from "./Icon";
 const ButtonStyled = styled.button`
   border: none;
   background: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 function IconButton({ icon }) {

@@ -3,10 +3,6 @@ import styled from "styled-components";
 
 const IconStyled = styled.img`
   display: block;
-
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 function Icon({ iconImage }) {
