@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import btnIcon from "../assets/images/icons/moon.svg";
+import IconButton from "./IconButton";
 
 const HeaderStyled = styled.header`
   align-items: center;
@@ -16,26 +17,11 @@ const TitleStyled = styled.h1`
   text-transform: capitalize;
 `;
 
-const ButtonStyled = styled.button`
-  border: none;
-  background: none;
-`;
-
-const IconStyled = styled.img`
-  display: block;
-
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
 function Header() {
   return (
     <HeaderStyled>
       <TitleStyled>Gabriel graciliano</TitleStyled>
-      <ButtonStyled>
-        <IconStyled src={btnIcon} alt="" />
-      </ButtonStyled>
+      <IconButton icon={btnIcon} />
     </HeaderStyled>
   );
 }
