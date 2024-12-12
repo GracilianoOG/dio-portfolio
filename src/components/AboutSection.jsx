@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import photo from "../assets/images/photo.jpg";
+import githubIcon from "../assets/images/icons/github.svg";
+import linkedin from "../assets/images/icons/linkedin.svg";
+import IconButton from "./IconButton";
 
 const AboutSectionStyled = styled.section`
   text-align: center;
@@ -19,6 +22,13 @@ const AboutTitleStyled = styled.h2`
 
 const AboutTextStyled = styled.p`
   font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
 `;
 
 function AboutSection() {
@@ -27,6 +37,10 @@ function AboutSection() {
       <PhotoStyled src={photo} alt="" />
       <AboutTitleStyled>Olá, eu sou o Gabriel, muito prazer!</AboutTitleStyled>
       <AboutTextStyled>Apaixonado por tecnologia e inovação.</AboutTextStyled>
+      <ButtonWrapper>
+        <IconButton icon={githubIcon} />
+        <IconButton icon={linkedin} />
+      </ButtonWrapper>
     </AboutSectionStyled>
   );
 }
