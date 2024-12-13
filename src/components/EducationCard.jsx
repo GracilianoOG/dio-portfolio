@@ -1,4 +1,3 @@
-import Icon from "./Icon";
 import capIcon from "../assets/images/icons/cap.svg";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -33,7 +32,7 @@ const CardDateStyled = styled.p`
 function EducationCard({ course, location, date }) {
   return (
     <Card>
-      <Icon iconImage={capIcon} />
+      <img src={capIcon} alt="" />
       <CardContent>
         <CardCourseStyled>{course}</CardCourseStyled>
         <p>{location}</p>
