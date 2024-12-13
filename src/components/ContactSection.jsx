@@ -6,7 +6,7 @@ import iconGithub from "../assets/images/icons/github.svg";
 import iconLinkedin from "../assets/images/icons/linkedin.svg";
 
 const ContactWrapperStyled = styled.section`
-  --border: 1px dashed black;
+  --border: 1px dashed var(--color-primary);
   border-top: var(--border);
   border-bottom: var(--border);
   padding: 2rem 10px;
