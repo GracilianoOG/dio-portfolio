@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import projectOne from "../assets/images/projects/project-1.jpg";
 import styled from "styled-components";
 
 const ProjectContent = styled.div`
@@ -45,6 +44,7 @@ const FilledButtonStyled = styled(ButtonStyled)`
 `;
 
 function ProjectCard({
+  image,
   projectName,
   description,
   featureList,
@@ -53,7 +53,7 @@ function ProjectCard({
 }) {
   return (
     <ProjectContent>
-      <ProjectImage src={projectOne} alt="" />
+      <ProjectImage src={image} alt="" />
       <ProjectTitle>{projectName}</ProjectTitle>
       <p>{description}</p>
       <ProjectFeatures>
@@ -70,6 +70,7 @@ function ProjectCard({
 }
 
 ProjectCard.propTypes = {
+  image: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   featureList: PropTypes.array.isRequired,
