@@ -19,6 +19,10 @@ const GlobalStyled = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  body {
+    color: var(--color-primary);
+  }
 `;
 
 export default GlobalStyled;
