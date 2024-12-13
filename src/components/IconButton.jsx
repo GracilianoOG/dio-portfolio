@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Icon from "./Icon";
 
 const ButtonStyled = styled.button`
   border: none;
@@ -11,10 +10,14 @@ const ButtonStyled = styled.button`
   }
 `;
 
+const IconStyled = styled.img`
+  display: block;
+`;
+
 function IconButton({ icon }) {
   return (
     <ButtonStyled>
-      <Icon iconImage={icon} />
+      <IconStyled src={icon} alt="" />
     </ButtonStyled>
   );
 }
