@@ -2,7 +2,7 @@ import styled from "styled-components";
 import photo from "../assets/images/photo.jpg";
 import githubIcon from "../assets/images/icons/github.svg";
 import linkedin from "../assets/images/icons/linkedin.svg";
-import IconButton from "./IconButton";
+import SocialLink from "./SocialLink";
 
 const AboutSectionStyled = styled.section`
   text-align: center;
@@ -27,7 +27,6 @@ const AboutTextStyled = styled.p`
 
 const ButtonWrapper = styled.div`
   display: flex;
-  gap: 0.75rem;
   justify-content: center;
 `;
 
@@ -38,8 +37,8 @@ function AboutSection() {
       <AboutTitleStyled>Olá, eu sou o Gabriel, muito prazer!</AboutTitleStyled>
       <AboutTextStyled>Apaixonado por tecnologia e inovação.</AboutTextStyled>
       <ButtonWrapper>
-        <IconButton icon={githubIcon} />
-        <IconButton icon={linkedin} />
+        <SocialLink imageSrc={githubIcon} href="#" />
+        <SocialLink imageSrc={linkedin} href="#" />
       </ButtonWrapper>
     </AboutSectionStyled>
   );
