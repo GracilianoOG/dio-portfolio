@@ -7,6 +7,7 @@ export const ButtonStyled = styled.a`
   display: inline-block;
   margin-right: 0.625rem;
   padding: 1rem 2rem;
+  text-align: center;
   text-decoration: none;
 
   &:hover {
@@ -18,6 +19,15 @@ export const ButtonStyled = styled.a`
     css`
       background: black;
       color: white;
+    `}
+
+  ${props =>
+    props.$decorated &&
+    css`
+      box-shadow: 8px 8px black;
+      font-weight: 700;
+      letter-spacing: 10%;
+      text-transform: uppercase;
     `}
 `;
 
