@@ -14,15 +14,15 @@ function SocialLink({ imageSrc, text, href }) {
   return (
     <LinkWrapperStyled href={href}>
       <img src={imageSrc} alt="" />
-      <span>{text}</span>
+      {text && <span>{text}</span>}
     </LinkWrapperStyled>
   );
 }
 
 SocialLink.propTypes = {
   imageSrc: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  href: PropTypes.string,
+  text: PropTypes.string,
+  href: PropTypes.string.isRequired,
 };
 
 export default SocialLink;
