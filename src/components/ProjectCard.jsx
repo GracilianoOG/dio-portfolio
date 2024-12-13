@@ -25,7 +25,32 @@ const ProjectFeatures = styled.ul`
   margin-left: 0.35rem;
 `;
 
-function ProjectCard({ projectName, description, featureList }) {
+const ButtonStyled = styled.a`
+  border: 1px solid black;
+  background: none;
+  color: black;
+  display: inline-block;
+  margin-right: 0.625rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+const FilledButtonStyled = styled(ButtonStyled)`
+  background: black;
+  color: white;
+`;
+
+function ProjectCard({
+  projectName,
+  description,
+  featureList,
+  previewLink,
+  repoLink,
+}) {
   return (
     <ProjectContent>
       <ProjectImage src={projectOne} alt="" />
@@ -36,6 +61,10 @@ function ProjectCard({ projectName, description, featureList }) {
           <li key={index}>{feat}</li>
         ))}
       </ProjectFeatures>
+      <div>
+        <ButtonStyled href={previewLink}>Preview</ButtonStyled>
+        <FilledButtonStyled href={repoLink}>Repositório</FilledButtonStyled>
+      </div>
     </ProjectContent>
   );
 }
@@ -44,6 +73,8 @@ ProjectCard.propTypes = {
   projectName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   featureList: PropTypes.array.isRequired,
+  previewLink: PropTypes.string,
+  repoLink: PropTypes.string,
 };
 
 export default ProjectCard;
