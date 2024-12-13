@@ -7,11 +7,11 @@ const HeaderStyled = styled.header`
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  margin-bottom: 6.25rem;
+  margin-bottom: var(--gap-base);
 `;
 
 const TitleStyled = styled.h1`
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family-secondary);
   font-weight: 600;
   font-size: 1rem;
   text-transform: capitalize;
