@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
 
 export const ButtonStyled = styled.a`
-  border: 1px solid black;
+  border: 1px solid var(--color-primary);
   background: none;
-  color: black;
+  color: var(--color-primary);
   display: inline-block;
   padding: 1rem 2rem;
   text-align: center;
@@ -16,14 +16,14 @@ export const ButtonStyled = styled.a`
   ${props =>
     props.$filled &&
     css`
-      background: black;
-      color: white;
+      background: var(--color-primary);
+      color: var(--color-secondary);
     `}
 
   ${props =>
     props.$decorated &&
     css`
-      box-shadow: 8px 8px black;
+      box-shadow: 8px 8px var(--color-primary);
       font-weight: 700;
       letter-spacing: 10%;
       text-transform: uppercase;
