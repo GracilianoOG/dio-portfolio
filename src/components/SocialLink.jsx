@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const LinkWrapperStyled = styled.a`
   align-items: center;
-  color: black;
+  color: var(--color-primary);
   display: flex;
   gap: 0.375rem;
   padding: 0.5rem;
