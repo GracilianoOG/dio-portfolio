@@ -7,7 +7,8 @@ import ContactSection from "./ContactSection";
 const MainContentStyled = styled.main`
   display: flex;
   flex-direction: column;
-  gap: 3.75rem;
+  gap: 6.25rem;
+  margin-bottom: 6.25rem;
 `;
 
 function Content() {
