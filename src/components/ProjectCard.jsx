@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { ButtonStyled, FilledButtonStyled } from "./styles/ButtonStyled";
 
 const ProjectContent = styled.div`
   display: grid;
@@ -22,25 +23,6 @@ const ProjectTitle = styled.h3`
 const ProjectFeatures = styled.ul`
   list-style-position: inside;
   margin-left: 0.35rem;
-`;
-
-const ButtonStyled = styled.a`
-  border: 1px solid black;
-  background: none;
-  color: black;
-  display: inline-block;
-  margin-right: 0.625rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
-
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
-const FilledButtonStyled = styled(ButtonStyled)`
-  background: black;
-  color: white;
 `;
 
 function ProjectCard({
