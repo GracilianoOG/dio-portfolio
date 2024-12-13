@@ -5,7 +5,6 @@ export const ButtonStyled = styled.a`
   background: none;
   color: black;
   display: inline-block;
-  margin-right: 0.625rem;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
