@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Card = styled.div`
   align-items: center;
-  border: 0.125rem dashed black;
+  border: 0.125rem dashed var(--color-primary);
   border-width: thin;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,7 @@ const CardCourseStyled = styled.h3`
 `;
 
 const CardDateStyled = styled.p`
+  color: var(--color-tertiary);
   font-weight: 300;
   font-size: 0.875rem;
 `;
