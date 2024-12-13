@@ -4,6 +4,7 @@ import projectOne from "../assets/images/projects/project-1.jpg";
 import projectTwo from "../assets/images/projects/project-2.jpg";
 import projectThree from "../assets/images/projects/project-3.jpg";
 import styled from "styled-components";
+import { ButtonStyled } from "./styles/ButtonStyled";
 
 const ProjectsWrapperStyled = styled.div`
   display: grid;
@@ -45,6 +46,9 @@ function ProjectsSection() {
             "Design elegante.",
           ]}
         />
+        <ButtonStyled $decorated href="#">
+          Mais projetos
+        </ButtonStyled>
       </ProjectsWrapperStyled>
     </section>
   );
