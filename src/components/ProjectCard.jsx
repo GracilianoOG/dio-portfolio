@@ -25,6 +25,12 @@ const ProjectFeatures = styled.ul`
   margin-left: 0.35rem;
 `;
 
+const ButtonWrapperStyled = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+`;
+
 function ProjectCard({
   image,
   projectName,
@@ -43,12 +49,12 @@ function ProjectCard({
           <li key={index}>{feat}</li>
         ))}
       </ProjectFeatures>
-      <div>
+      <ButtonWrapperStyled>
         <ButtonStyled href={previewLink}>Preview</ButtonStyled>
         <ButtonStyled $filled href={repoLink}>
           Repositório
         </ButtonStyled>
-      </div>
+      </ButtonWrapperStyled>
     </ProjectContent>
   );
 }
