@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ButtonStyled = styled.a`
   border: 1px solid black;
@@ -12,9 +12,16 @@ export const ButtonStyled = styled.a`
   &:hover {
     cursor: pointer;
   }
+
+  ${props =>
+    props.$filled &&
+    css`
+      background: black;
+      color: white;
+    `}
 `;
 
-export const FilledButtonStyled = styled(ButtonStyled)`
-  background: black;
-  color: white;
-`;
+// export const FilledButtonStyled = styled(ButtonStyled)`
+//   background: black;
+//   color: white;
+// `;

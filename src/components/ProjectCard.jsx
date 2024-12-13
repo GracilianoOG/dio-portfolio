@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { ButtonStyled, FilledButtonStyled } from "./styles/ButtonStyled";
+import { ButtonStyled } from "./styles/ButtonStyled";
 
 const ProjectContent = styled.div`
   display: grid;
@@ -45,7 +45,9 @@ function ProjectCard({
       </ProjectFeatures>
       <div>
         <ButtonStyled href={previewLink}>Preview</ButtonStyled>
-        <FilledButtonStyled href={repoLink}>Repositório</FilledButtonStyled>
+        <ButtonStyled $filled href={repoLink}>
+          Repositório
+        </ButtonStyled>
       </div>
     </ProjectContent>
   );
