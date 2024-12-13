@@ -2,6 +2,7 @@ import styled from "styled-components";
 import AboutSection from "./AboutSection";
 import EducationSection from "./EducationSection";
 import ProjectsSection from "./ProjectsSection";
+import ContactSection from "./ContactSection";
 
 const MainContentStyled = styled.main`
   display: flex;
@@ -15,6 +16,7 @@ function Content() {
       <AboutSection />
       <EducationSection />
       <ProjectsSection />
+      <ContactSection />
     </MainContentStyled>
   );
 }
