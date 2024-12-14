@@ -17,10 +17,45 @@ const TitleStyled = styled.h1`
   text-transform: capitalize;
 `;
 
+const NavStyled = styled.nav`
+  display: none;
+
+  @media screen and (min-width: 48rem) {
+    display: initial;
+  }
+`;
+
+const ListStyled = styled.ul`
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+`;
+
+const LinkStyled = styled.a`
+  color: var(--color-primary);
+  padding: 0.313rem;
+`;
+
 function Header() {
   return (
     <HeaderStyled>
       <TitleStyled>Gabriel graciliano</TitleStyled>
+      <NavStyled>
+        <ListStyled>
+          <li>
+            <LinkStyled href="#">Home</LinkStyled>
+          </li>
+          <li>
+            <LinkStyled href="#">Formação</LinkStyled>
+          </li>
+          <li>
+            <LinkStyled href="#">Projetos</LinkStyled>
+          </li>
+          <li>
+            <LinkStyled href="#">Contato</LinkStyled>
+          </li>
+        </ListStyled>
+      </NavStyled>
       <IconButton icon={btnIcon} />
     </HeaderStyled>
   );
