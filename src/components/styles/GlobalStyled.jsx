@@ -23,6 +23,10 @@ const GlobalStyled = createGlobalStyle`
   body {
     color: var(--color-primary);
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export default GlobalStyled;
