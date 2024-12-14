@@ -11,6 +11,10 @@ const ContactWrapperStyled = styled.section`
   border-bottom: var(--border);
   padding: 2rem 10px;
   text-align: center;
+
+  @media screen and (min-width: 48rem) {
+    padding: 4rem 0;
+  }
 `;
 
 const ContactDescription = styled.p`
