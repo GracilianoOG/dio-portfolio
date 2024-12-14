@@ -9,6 +9,10 @@ const GlobalStyled = createGlobalStyle`
     --font-family-primary: "Raleway", sans-serif;
     --font-family-secondary: "Inter", sans-serif;
     --gap-base: 6.25rem;
+
+    @media screen and (min-width: 48rem) {
+      --gap-base: 12.5rem;
+    }
   }
 
   *,
