@@ -2,12 +2,10 @@ import styled, { css } from "styled-components";
 
 export const ButtonStyled = styled.a`
   border: 1px solid var(--color-primary);
-  background: none;
   color: var(--color-primary);
   display: inline-block;
   padding: 1rem 2rem;
   text-align: center;
-  text-decoration: none;
 
   &:hover {
     cursor: pointer;
