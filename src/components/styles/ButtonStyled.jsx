@@ -26,7 +26,9 @@ export const ButtonStyled = styled.a`
       box-shadow: 8px 8px var(--color-primary);
       font-weight: 700;
       letter-spacing: 10%;
+      margin: 0 auto;
       text-transform: uppercase;
+      width: 21.438rem;
     `}
 `;
 
