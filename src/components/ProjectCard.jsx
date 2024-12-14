@@ -8,7 +8,7 @@ const ProjectContent = styled.div`
 `;
 
 const ProjectImage = styled.img`
-  max-height: 12.5rem;
+  max-height: 57vw;
   object-fit: cover;
   width: 100%;
 `;
