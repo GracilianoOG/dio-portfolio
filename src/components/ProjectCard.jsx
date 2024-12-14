@@ -4,13 +4,20 @@ import { ButtonStyled } from "./styles/ButtonStyled";
 
 const ProjectCardContent = styled.div`
   display: grid;
-  gap: 1rem;
+  gap: clamp(1rem, 3.5vw, 3rem);
   font-size: clamp(1rem, 1.5vw, 1.5rem);
 
   @media screen and (min-width: 64rem) {
     align-items: center;
-    gap: 3rem;
-    grid-template-columns: 1.6fr 1fr;
+    grid-template-columns: 2fr 1fr;
+
+    &:nth-child(even) {
+      grid-template-columns: 1fr 2fr;
+
+      & > img {
+        order: 1;
+      }
+    }
   }
 `;
 
@@ -18,6 +25,10 @@ const ProjectImage = styled.img`
   max-height: 57vw;
   object-fit: cover;
   width: 100%;
+
+  @media screen and (min-width: 64rem) {
+    max-height: 36vw;
+  }
 `;
 
 const ProjectTitle = styled.h3`
