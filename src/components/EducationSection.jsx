@@ -5,6 +5,10 @@ import SectionTitleStyled from "./styles/SectionTitleStyled";
 const SectionContent = styled.div`
   display: grid;
   gap: 2rem;
+
+  @media screen and (min-width: 64rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 function EducationSection() {
