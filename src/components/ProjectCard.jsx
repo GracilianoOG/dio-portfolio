@@ -2,9 +2,16 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { ButtonStyled } from "./styles/ButtonStyled";
 
-const ProjectContent = styled.div`
+const ProjectCardContent = styled.div`
   display: grid;
   gap: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+
+  @media screen and (min-width: 64rem) {
+    align-items: center;
+    gap: 3rem;
+    grid-template-columns: 1.6fr 1fr;
+  }
 `;
 
 const ProjectImage = styled.img`
@@ -15,7 +22,7 @@ const ProjectImage = styled.img`
 
 const ProjectTitle = styled.h3`
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
   letter-spacing: 5%;
   text-transform: uppercase;
 `;
@@ -28,7 +35,14 @@ const ProjectFeatures = styled.ul`
 const ButtonWrapperStyled = styled.div`
   display: flex;
   flex-wrap: wrap;
+  font-size: 1rem;
   gap: 0.625rem;
+`;
+
+const ProjectContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.8vw, 2rem);
 `;
 
 function ProjectCard({
@@ -40,22 +54,24 @@ function ProjectCard({
   repoLink,
 }) {
   return (
-    <ProjectContent>
+    <ProjectCardContent>
       <ProjectImage src={image} alt="" />
-      <ProjectTitle>{projectName}</ProjectTitle>
-      <p>{description}</p>
-      <ProjectFeatures>
-        {featureList.map((feat, index) => (
-          <li key={index}>{feat}</li>
-        ))}
-      </ProjectFeatures>
-      <ButtonWrapperStyled>
-        <ButtonStyled href={previewLink}>Preview</ButtonStyled>
-        <ButtonStyled $filled href={repoLink}>
-          Repositório
-        </ButtonStyled>
-      </ButtonWrapperStyled>
-    </ProjectContent>
+      <ProjectContent>
+        <ProjectTitle>{projectName}</ProjectTitle>
+        <p>{description}</p>
+        <ProjectFeatures>
+          {featureList.map((feat, index) => (
+            <li key={index}>{feat}</li>
+          ))}
+        </ProjectFeatures>
+        <ButtonWrapperStyled>
+          <ButtonStyled href={previewLink}>Preview</ButtonStyled>
+          <ButtonStyled $filled href={repoLink}>
+            Repositório
+          </ButtonStyled>
+        </ButtonWrapperStyled>
+      </ProjectContent>
+    </ProjectCardContent>
   );
 }
 
