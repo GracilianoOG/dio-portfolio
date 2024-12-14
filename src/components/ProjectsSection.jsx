@@ -9,6 +9,10 @@ import { ButtonStyled } from "./styles/ButtonStyled";
 const ProjectsWrapperStyled = styled.div`
   display: grid;
   gap: 2.5rem;
+
+  @media screen and (min-width: 64rem) {
+    gap: 4rem;
+  }
 `;
 
 function ProjectsSection() {
