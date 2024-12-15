@@ -7,6 +7,7 @@ const GlobalStyled = createGlobalStyle`
     --color-primary: #1C1C1C;
     --color-secondary: #FFFFFF;
     --color-tertiary: #363636;
+    --color-mobile-line: #b6b6b6;
     --font-family-primary: "Raleway", sans-serif;
     --font-family-secondary: "Inter", sans-serif;
     --gap-base: 6.25rem;
