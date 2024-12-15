@@ -2,6 +2,7 @@ import styled from "styled-components";
 import btnIcon from "../assets/images/icons/moon.svg";
 import IconButton from "./IconButton";
 import { devices } from "../utils/breakpoints";
+import MobileMenu from "./MobileMenu";
 
 const HeaderStyled = styled.header`
   align-items: center;
@@ -57,6 +58,7 @@ function Header() {
           </li>
         </ListStyled>
       </NavStyled>
+      <MobileMenu />
       <IconButton icon={btnIcon} />
     </HeaderStyled>
   );
