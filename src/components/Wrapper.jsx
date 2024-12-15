@@ -3,9 +3,13 @@ import styled from "styled-components";
 import { devices } from "../utils/breakpoints";
 
 const WrapperStyled = styled.div`
-  margin: 1rem;
+  margin: 1rem 1rem 7.5rem 1rem;
 
   @media screen and ${devices.md} {
+    margin: 4rem 4rem 8rem 4rem;
+  }
+
+  @media screen and ${devices.lg} {
     margin: 4rem;
   }
 `;
