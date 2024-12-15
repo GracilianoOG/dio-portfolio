@@ -8,8 +8,13 @@ const Card = styled.div`
   border-width: thin;
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
   padding: 2rem 1rem;
   text-align: center;
+
+  @media screen and (min-width: 64rem) {
+    font-size: 1.5rem;
+  }
 `;
 
 const CardContent = styled.div`
@@ -21,13 +26,16 @@ const CardContent = styled.div`
 
 const CardCourseStyled = styled.h3`
   font-weight: 600;
-  font-size: 1rem;
 `;
 
 const CardDateStyled = styled.p`
   color: var(--color-tertiary);
   font-weight: 300;
   font-size: 0.875rem;
+
+  @media screen and (min-width: 64rem) {
+    font-size: 1.25rem;
+  }
 `;
 
 function EducationCard({ course, location, date }) {
