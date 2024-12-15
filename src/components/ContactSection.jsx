@@ -31,7 +31,7 @@ const LinksWrapperStyled = styled.div`
 
 function ContactSection() {
   return (
-    <ContactWrapperStyled>
+    <ContactWrapperStyled id="contact">
       <SectionTitleStyled>Contato</SectionTitleStyled>
       <ContactDescription>
         Contate-me por e-mail ou pelas minhas redes sociais. Vamos conversar? =)

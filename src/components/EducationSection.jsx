@@ -14,7 +14,7 @@ const SectionContent = styled.div`
 
 function EducationSection() {
   return (
-    <section>
+    <section id="education">
       <SectionTitleStyled>Formação</SectionTitleStyled>
       <SectionContent>
         <EducationCard

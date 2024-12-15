@@ -44,16 +44,16 @@ function Header() {
       <NavStyled>
         <ListStyled>
           <li>
-            <LinkStyled href="#">Home</LinkStyled>
+            <LinkStyled href="#top">Home</LinkStyled>
           </li>
           <li>
-            <LinkStyled href="#">Formação</LinkStyled>
+            <LinkStyled href="#education">Formação</LinkStyled>
           </li>
           <li>
-            <LinkStyled href="#">Projetos</LinkStyled>
+            <LinkStyled href="#projects">Projetos</LinkStyled>
           </li>
           <li>
-            <LinkStyled href="#">Contato</LinkStyled>
+            <LinkStyled href="#contact">Contato</LinkStyled>
           </li>
         </ListStyled>
       </NavStyled>

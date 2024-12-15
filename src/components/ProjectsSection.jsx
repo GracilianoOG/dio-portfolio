@@ -18,7 +18,7 @@ const ProjectsWrapperStyled = styled.div`
 
 function ProjectsSection() {
   return (
-    <section>
+    <section id="projects">
       <SectionTitleStyled>Projetos</SectionTitleStyled>
       <ProjectsWrapperStyled>
         <ProjectCard
