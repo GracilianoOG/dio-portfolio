@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import btnIcon from "../assets/images/icons/moon.svg";
 import IconButton from "./IconButton";
-import { devices } from "../utils/breakpoints";
 import MobileMenu from "./MobileMenu";
+import Menu from "./Menu";
 
 const HeaderStyled = styled.header`
   align-items: center;
@@ -19,45 +19,11 @@ const TitleStyled = styled.h1`
   text-transform: capitalize;
 `;
 
-const NavStyled = styled.nav`
-  display: none;
-
-  @media screen and ${devices.md} {
-    display: initial;
-  }
-`;
-
-const ListStyled = styled.ul`
-  display: flex;
-  list-style: none;
-  text-transform: uppercase;
-`;
-
-const LinkStyled = styled.a`
-  color: var(--color-primary);
-  padding: 0.313rem;
-`;
-
 function Header() {
   return (
     <HeaderStyled>
       <TitleStyled>Gabriel graciliano</TitleStyled>
-      <NavStyled>
-        <ListStyled>
-          <li>
-            <LinkStyled href="#top">Home</LinkStyled>
-          </li>
-          <li>
-            <LinkStyled href="#education">Formação</LinkStyled>
-          </li>
-          <li>
-            <LinkStyled href="#projects">Projetos</LinkStyled>
-          </li>
-          <li>
-            <LinkStyled href="#contact">Contato</LinkStyled>
-          </li>
-        </ListStyled>
-      </NavStyled>
+      <Menu />
       <MobileMenu />
       <IconButton icon={btnIcon} />
     </HeaderStyled>
