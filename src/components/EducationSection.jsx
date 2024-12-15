@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import EducationCard from "./EducationCard";
 import SectionTitleStyled from "./styles/SectionTitleStyled";
+import { devices } from "../utils/breakpoints";
 
 const SectionContent = styled.div`
   display: grid;
   gap: 2rem;
 
-  @media screen and (min-width: 64rem) {
+  @media screen and ${devices.lg} {
     grid-template-columns: repeat(3, 1fr);
   }
 `;

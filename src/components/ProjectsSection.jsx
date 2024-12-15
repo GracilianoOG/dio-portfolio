@@ -5,12 +5,13 @@ import projectTwo from "../assets/images/projects/project-2.jpg";
 import projectThree from "../assets/images/projects/project-3.jpg";
 import styled from "styled-components";
 import { ButtonStyled } from "./styles/ButtonStyled";
+import { devices } from "../utils/breakpoints";
 
 const ProjectsWrapperStyled = styled.div`
   display: grid;
   gap: 2.5rem;
 
-  @media screen and (min-width: 64rem) {
+  @media screen and ${devices.lg} {
     gap: 4rem;
   }
 `;

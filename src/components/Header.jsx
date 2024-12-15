@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import btnIcon from "../assets/images/icons/moon.svg";
 import IconButton from "./IconButton";
+import { devices } from "../utils/breakpoints";
 
 const HeaderStyled = styled.header`
   align-items: center;
@@ -20,7 +21,7 @@ const TitleStyled = styled.h1`
 const NavStyled = styled.nav`
   display: none;
 
-  @media screen and (min-width: 48rem) {
+  @media screen and ${devices.md} {
     display: initial;
   }
 `;

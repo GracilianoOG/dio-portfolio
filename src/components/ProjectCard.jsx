@@ -1,13 +1,14 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { ButtonStyled } from "./styles/ButtonStyled";
+import { devices } from "../utils/breakpoints";
 
 const ProjectCardContent = styled.div`
   display: grid;
   gap: clamp(1rem, 3.5vw, 3rem);
   font-size: clamp(1rem, 1.5vw, 1.5rem);
 
-  @media screen and (min-width: 64rem) {
+  @media screen and ${devices.lg} {
     align-items: center;
     grid-template-columns: 2fr 1fr;
 
@@ -26,7 +27,7 @@ const ProjectImage = styled.img`
   object-fit: cover;
   width: 100%;
 
-  @media screen and (min-width: 64rem) {
+  @media screen and ${devices.lg} {
     max-height: 36vw;
   }
 `;

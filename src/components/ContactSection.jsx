@@ -4,6 +4,7 @@ import SectionTitleStyled from "./styles/SectionTitleStyled";
 import SocialLink from "./SocialLink";
 import iconGithub from "../assets/images/icons/github.svg";
 import iconLinkedin from "../assets/images/icons/linkedin.svg";
+import { devices } from "../utils/breakpoints";
 
 const ContactWrapperStyled = styled.section`
   --border: 1px dashed var(--color-primary);
@@ -12,7 +13,7 @@ const ContactWrapperStyled = styled.section`
   padding: 2rem 10px;
   text-align: center;
 
-  @media screen and (min-width: 48rem) {
+  @media screen and ${devices.md} {
     padding: 4rem 0;
   }
 `;

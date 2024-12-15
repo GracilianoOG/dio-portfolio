@@ -1,6 +1,7 @@
 import capIcon from "../assets/images/icons/cap.svg";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { devices } from "../utils/breakpoints";
 
 const Card = styled.div`
   align-items: center;
@@ -12,7 +13,7 @@ const Card = styled.div`
   padding: 2rem 1rem;
   text-align: center;
 
-  @media screen and (min-width: 64rem) {
+  @media screen and ${devices.lg} {
     font-size: 1.5rem;
   }
 `;
@@ -33,7 +34,7 @@ const CardDateStyled = styled.p`
   font-weight: 300;
   font-size: 0.875rem;
 
-  @media screen and (min-width: 64rem) {
+  @media screen and ${devices.lg} {
     font-size: 1.25rem;
   }
 `;

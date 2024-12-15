@@ -3,6 +3,7 @@ import photo from "../assets/images/photo.jpg";
 import githubIcon from "../assets/images/icons/github.svg";
 import linkedin from "../assets/images/icons/linkedin.svg";
 import SocialLink from "./SocialLink";
+import { devices } from "../utils/breakpoints";
 
 const AboutSectionStyled = styled.section`
   display: flex;
@@ -10,7 +11,7 @@ const AboutSectionStyled = styled.section`
   flex-direction: column;
   text-align: center;
 
-  @media screen and (min-width: 64rem) {
+  @media screen and ${devices.lg} {
     flex-direction: row;
     align-items: center;
   }
@@ -19,7 +20,7 @@ const AboutSectionStyled = styled.section`
 const PhotoStyled = styled.img`
   width: 100%;
 
-  @media screen and (min-width: 64rem) {
+  @media screen and ${devices.lg} {
     max-width: 31.25rem;
   }
 `;
@@ -30,7 +31,7 @@ const AboutTitleStyled = styled.h2`
   font-weight: 400;
   margin-bottom: 0.75rem;
 
-  @media screen and (min-width: 48rem) {
+  @media screen and ${devices.md} {
     font-size: 2rem;
   }
 `;
@@ -39,7 +40,7 @@ const AboutTextStyled = styled.p`
   font-size: 0.75rem;
   margin-bottom: 1.5rem;
 
-  @media screen and (min-width: 48rem) {
+  @media screen and ${devices.md} {
     font-size: 1.5rem;
   }
 `;

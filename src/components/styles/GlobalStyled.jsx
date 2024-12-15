@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { devices } from "../../utils/breakpoints";
 
 const GlobalStyled = createGlobalStyle`
   :root {
@@ -10,7 +11,7 @@ const GlobalStyled = createGlobalStyle`
     --font-family-secondary: "Inter", sans-serif;
     --gap-base: 6.25rem;
 
-    @media screen and (min-width: 48rem) {
+    @media screen and ${devices.md} {
       --gap-base: 12.5rem;
     }
   }
