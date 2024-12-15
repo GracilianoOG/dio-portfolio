@@ -26,6 +26,10 @@ const GlobalStyled = createGlobalStyle`
     padding: 0;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-primary);
