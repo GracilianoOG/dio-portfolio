@@ -1,7 +1,6 @@
 import capIcon from "../assets/images/icons/cap.svg";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { devices } from "../utils/breakpoints";
 
 const Card = styled.div`
   align-items: center;
@@ -9,13 +8,9 @@ const Card = styled.div`
   border-width: thin;
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.7vw, 1.5rem);
   padding: 2rem 1rem;
   text-align: center;
-
-  @media screen and ${devices.lg} {
-    font-size: 1.5rem;
-  }
 `;
 
 const CardContent = styled.div`
@@ -32,11 +27,7 @@ const CardCourseStyled = styled.h3`
 const CardDateStyled = styled.p`
   color: var(--color-tertiary);
   font-weight: 300;
-  font-size: 0.875rem;
-
-  @media screen and ${devices.lg} {
-    font-size: 1.25rem;
-  }
+  font-size: clamp(0.875rem, 1.5vw, 1.25rem);
 `;
 
 function EducationCard({ course, location, date }) {
