@@ -24,16 +24,16 @@ const NavStyled = styled.nav`
 function MobileMenu() {
   return (
     <NavStyled>
-      <MobileLink href="#" imageSrc={homeIcon}>
+      <MobileLink href="#top" imageSrc={homeIcon}>
         Home
       </MobileLink>
-      <MobileLink href="#" imageSrc={capIcon}>
+      <MobileLink href="#education" imageSrc={capIcon}>
         Formação
       </MobileLink>
-      <MobileLink href="#" imageSrc={codeIcon}>
+      <MobileLink href="#projects" imageSrc={codeIcon}>
         Projetos
       </MobileLink>
-      <MobileLink href="#" imageSrc={mailIcon}>
+      <MobileLink href="#contact" imageSrc={mailIcon}>
         Contato
       </MobileLink>
     </NavStyled>
