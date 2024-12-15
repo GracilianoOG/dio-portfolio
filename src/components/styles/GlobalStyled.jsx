@@ -25,6 +25,7 @@ const GlobalStyled = createGlobalStyle`
   }
 
   body {
+    background-color: var(--color-background);
     color: var(--color-primary);
   }
 
