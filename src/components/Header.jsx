@@ -8,7 +8,7 @@ const HeaderStyled = styled.header`
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  margin-bottom: var(--gap-base);
+  margin-bottom: 6.25rem;
 `;
 
 const TitleStyled = styled.h1`
