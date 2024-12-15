@@ -7,7 +7,6 @@ const LinkWrapperStyled = styled.a`
   display: flex;
   gap: 0.375rem;
   padding: 0.5rem;
-  text-decoration: none;
 `;
 
 function SocialLink({ imageSrc, text, href }) {
