@@ -12,7 +12,7 @@ function App() {
     <>
       <GlobalStyled $isDarkMode={darkState} />
       <Wrapper>
-        <Header setDarkState={setDarkState} />
+        <Header darkState={darkState} setDarkState={setDarkState} />
         <Content />
         <Footer />
       </Wrapper>
