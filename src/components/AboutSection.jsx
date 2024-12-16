@@ -22,7 +22,7 @@ const PhotoStyled = styled.img`
   width: 100%;
 
   @media screen and ${devices.lg} {
-    max-width: 31.25rem;
+    max-width: min(31.25rem, 38.11%);
   }
 `;
 
