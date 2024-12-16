@@ -29,7 +29,7 @@ function Header({ darkState, setDarkState }) {
       <MobileMenu />
       <IconButton
         icon={darkState ? darkIcon : lightIcon}
-        onClick={() => setDarkState(theme => !theme)}
+        onClick={() => setDarkState(prevDarkState => !prevDarkState)}
       />
     </HeaderStyled>
   );
