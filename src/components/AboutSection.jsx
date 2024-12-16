@@ -27,7 +27,7 @@ const PhotoStyled = styled.img`
 `;
 
 const AboutTitleStyled = styled.h2`
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family-secondary);
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0.75rem;
