@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import btnIcon from "../assets/images/icons/moon.svg";
+import darkIcon from "../assets/images/icons/moon.svg";
+import lightIcon from "../assets/images/icons/sun.svg";
 import IconButton from "./IconButton";
 import MobileMenu from "./MobileMenu";
 import Menu from "./Menu";
@@ -20,14 +21,14 @@ const TitleStyled = styled.h1`
   text-transform: capitalize;
 `;
 
-function Header({ setDarkState }) {
+function Header({ darkState, setDarkState }) {
   return (
     <HeaderStyled>
       <TitleStyled>Gabriel graciliano</TitleStyled>
       <Menu />
       <MobileMenu />
       <IconButton
-        icon={btnIcon}
+        icon={darkState ? darkIcon : lightIcon}
         onClick={() => setDarkState(theme => !theme)}
       />
     </HeaderStyled>
@@ -36,6 +37,7 @@ function Header({ setDarkState }) {
 
 Header.propTypes = {
   setDarkState: PropTypes.func.isRequired,
+  darkState: PropTypes.bool.isRequired,
 };
 
 export default Header;
