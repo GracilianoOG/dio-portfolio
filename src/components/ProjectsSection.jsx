@@ -30,6 +30,8 @@ function ProjectsSection() {
             "Mobile-first;",
             "Desenvolvido com React e Vite.",
           ]}
+          repoLink="https://github.com/GracilianoOG/fementor-column-preview"
+          previewLink="https://fementor-column-preview.vercel.app/"
         />
         <ProjectCard
           image={projectTwo}
@@ -40,6 +42,8 @@ function ProjectsSection() {
             "Desenvolvido com Sass;",
             "Botão de tema light e dark.",
           ]}
+          repoLink="https://github.com/GracilianoOG/dio-mundo-invertido"
+          previewLink="https://gracilianoog.github.io/dio-mundo-invertido/"
         />
         <ProjectCard
           image={projectThree}
@@ -50,8 +54,13 @@ function ProjectsSection() {
             "Layout responsivo;",
             "Design elegante.",
           ]}
+          repoLink="https://github.com/GracilianoOG/dio-desafio-css-landing-page"
+          previewLink="https://gracilianoog.github.io/dio-desafio-css-landing-page/"
         />
-        <ButtonStyled $decorated href="#">
+        <ButtonStyled
+          $decorated
+          href="https://github.com/GracilianoOG?tab=repositories"
+        >
           Mais projetos
         </ButtonStyled>
       </ProjectsWrapperStyled>
