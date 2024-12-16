@@ -4,7 +4,7 @@ import { devices } from "../utils/breakpoints";
 const NavStyled = styled.nav`
   display: none;
 
-  @media screen and ${devices.md} {
+  @media screen and ${devices.lg} {
     display: initial;
   }
 `;
