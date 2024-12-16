@@ -57,8 +57,14 @@ function AboutSection() {
         </AboutTitleStyled>
         <AboutTextStyled>Apaixonado por tecnologia e inovação.</AboutTextStyled>
         <ButtonWrapper>
-          <SocialLink imageSrc={githubIcon} href="#" />
-          <SocialLink imageSrc={linkedin} href="#" />
+          <SocialLink
+            imageSrc={githubIcon}
+            href="https://github.com/GracilianoOG"
+          />
+          <SocialLink
+            imageSrc={linkedin}
+            href="https://www.linkedin.com/in/gabrielgmbarros"
+          />
         </ButtonWrapper>
       </ContentWrapperStyled>
     </AboutSectionStyled>

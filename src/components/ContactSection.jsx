@@ -37,8 +37,16 @@ function ContactSection() {
         Contate-me por e-mail ou pelas minhas redes sociais. Vamos conversar? =)
       </ContactDescription>
       <LinksWrapperStyled>
-        <SocialLink imageSrc={iconGithub} text="GitHub" href="#" />
-        <SocialLink imageSrc={iconLinkedin} text="LinkedIn" href="#" />
+        <SocialLink
+          imageSrc={iconGithub}
+          text="GitHub"
+          href="https://github.com/GracilianoOG"
+        />
+        <SocialLink
+          imageSrc={iconLinkedin}
+          text="LinkedIn"
+          href="https://www.linkedin.com/in/gabrielgmbarros"
+        />
       </LinksWrapperStyled>
       <ButtonStyled $filled href="mailto:gabriel.gracilianomb@gmail.com">
         gabriel.gracilianomb@gmail.com
