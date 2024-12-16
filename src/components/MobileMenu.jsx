@@ -15,6 +15,7 @@ const NavStyled = styled.nav`
   left: 0;
   position: fixed;
   width: 100%;
+  z-index: 1;
 
   @media screen and ${devices.lg} {
     display: none;
