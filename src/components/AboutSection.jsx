@@ -28,22 +28,14 @@ const PhotoStyled = styled.img`
 
 const AboutTitleStyled = styled.h2`
   font-family: var(--font-family-secondary);
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 2rem);
   font-weight: 400;
   margin-bottom: 0.75rem;
-
-  @media screen and ${devices.md} {
-    font-size: 2rem;
-  }
 `;
 
 const AboutTextStyled = styled.p`
-  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 1.75vw, 1.5rem);
   margin-bottom: 1.5rem;
-
-  @media screen and ${devices.md} {
-    font-size: 1.5rem;
-  }
 `;
 
 const ButtonWrapper = styled.div`
