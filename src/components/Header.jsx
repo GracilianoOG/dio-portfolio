@@ -3,6 +3,7 @@ import btnIcon from "../assets/images/icons/moon.svg";
 import IconButton from "./IconButton";
 import MobileMenu from "./MobileMenu";
 import Menu from "./Menu";
+import PropTypes from "prop-types";
 
 const HeaderStyled = styled.header`
   align-items: center;
@@ -19,15 +20,22 @@ const TitleStyled = styled.h1`
   text-transform: capitalize;
 `;
 
-function Header() {
+function Header({ setDarkState }) {
   return (
     <HeaderStyled>
       <TitleStyled>Gabriel graciliano</TitleStyled>
       <Menu />
       <MobileMenu />
-      <IconButton icon={btnIcon} />
+      <IconButton
+        icon={btnIcon}
+        onClick={() => setDarkState(theme => !theme)}
+      />
     </HeaderStyled>
   );
 }
+
+Header.propTypes = {
+  setDarkState: PropTypes.func.isRequired,
+};
 
 export default Header;
