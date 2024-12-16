@@ -8,10 +8,14 @@ import PropTypes from "prop-types";
 
 const HeaderStyled = styled.header`
   align-items: center;
+  background-color: var(--color-background);
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
-  margin-bottom: 6.25rem;
+  margin-bottom: 4.25rem;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 `;
 
 const TitleStyled = styled.h1`
