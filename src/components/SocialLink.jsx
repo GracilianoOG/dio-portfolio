@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import IconStyled from "./styles/IconStyled";
 
 const LinkWrapperStyled = styled.a`
   align-items: center;
@@ -12,7 +13,7 @@ const LinkWrapperStyled = styled.a`
 function SocialLink({ imageSrc, text, href }) {
   return (
     <LinkWrapperStyled href={href}>
-      <img src={imageSrc} alt="" />
+      <IconStyled src={imageSrc} alt="" />
       {text && <span>{text}</span>}
     </LinkWrapperStyled>
   );

@@ -1,6 +1,7 @@
 import capIcon from "../assets/images/icons/cap.svg";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import IconStyled from "./styles/IconStyled";
 
 const Card = styled.div`
   align-items: center;
@@ -33,7 +34,7 @@ const CardDateStyled = styled.p`
 function EducationCard({ course, location, date }) {
   return (
     <Card>
-      <img src={capIcon} alt="" />
+      <IconStyled src={capIcon} alt="" />
       <CardContent>
         <CardCourseStyled>{course}</CardCourseStyled>
         <p>{location}</p>
