@@ -6,6 +6,7 @@ import SocialLink from "./SocialLink";
 import { devices } from "../utils/breakpoints";
 
 const AboutSectionStyled = styled.section`
+  align-items: center;
   display: flex;
   gap: 1.25rem;
   flex-direction: column;
@@ -13,11 +14,11 @@ const AboutSectionStyled = styled.section`
 
   @media screen and ${devices.lg} {
     flex-direction: row;
-    align-items: center;
   }
 `;
 
 const PhotoStyled = styled.img`
+  max-width: 25rem;
   width: 100%;
 
   @media screen and ${devices.lg} {
