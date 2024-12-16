@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 import { devices } from "../../utils/breakpoints";
 
 const GlobalStyled = createGlobalStyle`
@@ -8,6 +8,19 @@ const GlobalStyled = createGlobalStyle`
     --color-secondary: #FFFFFF;
     --color-tertiary: #363636;
     --color-mobile-line: #b6b6b6;
+    --icon-filter: none;
+    
+    ${props =>
+      props.$isDarkMode &&
+      css`
+        --color-background: #1c1c1c;
+        --color-primary: #ffffff;
+        --color-secondary: #1c1c1c;
+        --color-tertiary: #9a9a9c;
+        --color-mobile-line: #b6b6b6;
+        --icon-filter: invert(1);
+      `}
+      
     --font-family-primary: "Raleway", sans-serif;
     --font-family-secondary: "Inter", sans-serif;
     --gap-base: 6.25rem;
