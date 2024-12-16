@@ -41,7 +41,7 @@ const GlobalStyled = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 4.688rem;
+    scroll-padding-top: 7.5rem;
   }
 
   body {
