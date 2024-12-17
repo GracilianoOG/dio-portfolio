@@ -60,12 +60,21 @@ export const ButtonStyled = styled.a`
   ${props =>
     props.$decorated &&
     css`
-      box-shadow: 8px 8px var(--color-primary);
+      --shadow-pos: 0.5rem;
+      --cur-shadow-pos: var(--shadow-pos);
+      box-shadow: var(--cur-shadow-pos) var(--cur-shadow-pos)
+        var(--color-primary);
       font-weight: 700;
       letter-spacing: 10%;
       margin: 0 auto;
+      transition: transform 0.2s, box-shadow 0.15s;
       text-transform: uppercase;
       width: 21.438rem;
+
+      &:hover {
+        --cur-shadow-pos: 0;
+        transform: translate(var(--shadow-pos), var(--shadow-pos));
+      }
     `}
 `;
 
