@@ -18,6 +18,25 @@ const ListStyled = styled.ul`
 const LinkStyled = styled.a`
   color: var(--color-primary);
   padding: 0.313rem;
+  position: relative;
+
+  &::before {
+    --line-scale: 0;
+    background-color: var(--color-primary);
+    bottom: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 0.125rem;
+    transition: transform 0.4s;
+    transform: scaleX(var(--line-scale));
+    transform-origin: center;
+    width: 100%;
+  }
+
+  &:hover::before {
+    --line-scale: 1;
+  }
 `;
 
 function Menu() {
