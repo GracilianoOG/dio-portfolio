@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import darkIcon from "../assets/images/icons/moon.svg";
-import lightIcon from "../assets/images/icons/sun.svg";
 import ThemeSwitcher from "./ThemeSwitcher";
 import MobileMenu from "./MobileMenu";
 import Menu from "./Menu";
@@ -29,16 +27,13 @@ const TitleStyled = styled.h1`
   text-transform: capitalize;
 `;
 
-function Header({ darkState, setDarkState }) {
+function Header(props) {
   return (
     <HeaderStyled>
       <TitleStyled>Gabriel graciliano</TitleStyled>
       <Menu />
       <MobileMenu />
-      <ThemeSwitcher
-        icon={darkState ? darkIcon : lightIcon}
-        onClick={() => setDarkState(prevDarkState => !prevDarkState)}
-      />
+      <ThemeSwitcher {...props} />
     </HeaderStyled>
   );
 }
