@@ -24,7 +24,11 @@ const LocalIconStyled = styled(IconStyled)`
 
 function ThemeSwitcher({ darkState, setDarkState }) {
   return (
-    <ButtonStyled onClick={() => setDarkState(prevDarkState => !prevDarkState)}>
+    <ButtonStyled
+      onClick={() => setDarkState(prevDarkState => !prevDarkState)}
+      aria-label="Tema dark"
+      aria-pressed={darkState}
+    >
       <LocalIconStyled src={darkState ? darkIcon : lightIcon} alt="" />
     </ButtonStyled>
   );
