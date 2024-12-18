@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import darkIcon from "../assets/images/icons/moon.svg";
 import lightIcon from "../assets/images/icons/sun.svg";
-import IconButton from "./IconButton";
+import ThemeSwitcher from "./ThemeSwitcher";
 import MobileMenu from "./MobileMenu";
 import Menu from "./Menu";
 import PropTypes from "prop-types";
@@ -35,7 +35,7 @@ function Header({ darkState, setDarkState }) {
       <TitleStyled>Gabriel graciliano</TitleStyled>
       <Menu />
       <MobileMenu />
-      <IconButton
+      <ThemeSwitcher
         icon={darkState ? darkIcon : lightIcon}
         onClick={() => setDarkState(prevDarkState => !prevDarkState)}
       />
