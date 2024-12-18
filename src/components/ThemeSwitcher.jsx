@@ -20,7 +20,7 @@ const LocalIconStyled = styled(IconStyled)`
   display: block;
 `;
 
-function IconButton({ icon, onClick }) {
+function ThemeSwitcher({ icon, onClick }) {
   return (
     <ButtonStyled onClick={onClick}>
       <LocalIconStyled src={icon} alt="" />
@@ -28,9 +28,9 @@ function IconButton({ icon, onClick }) {
   );
 }
 
-IconButton.propTypes = {
+ThemeSwitcher.propTypes = {
   icon: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
-export default IconButton;
+export default ThemeSwitcher;
