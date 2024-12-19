@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const ButtonStyled = styled.a`
-  border: 1px solid var(--color-primary);
+  border: 0.063rem solid var(--color-primary);
   color: var(--color-primary);
   display: inline-block;
   overflow: hidden;
