@@ -4,22 +4,26 @@ import IconStyled from "./styles/IconStyled";
 import darkIcon from "../assets/images/icons/moon.svg";
 import lightIcon from "../assets/images/icons/sun.svg";
 
+const LocalIconStyled = styled(IconStyled)`
+  display: block;
+  transition: transform 0.5s;
+`;
+
 const ButtonStyled = styled.button`
-  border: none;
+  border: 0.125rem solid transparent;
   background-color: transparent;
   border-radius: 50%;
   padding: 0.5rem;
-  transition: transform 0.5s, filter 0.5s;
+  transition: border-color 0.5s;
 
   &:hover {
+    border-color: var(--color-primary);
     cursor: pointer;
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 0.625rem var(--color-primary)) brightness(1.5);
   }
-`;
 
-const LocalIconStyled = styled(IconStyled)`
-  display: block;
+  &:hover ${LocalIconStyled} {
+    transform: scale(0.85);
+  }
 `;
 
 function ThemeSwitcher({ darkState, setDarkState }) {
