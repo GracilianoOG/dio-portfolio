@@ -26,9 +26,9 @@ function ProjectsSection() {
           projectName="3-Column preview"
           description="Component com três colunas desenvovido em React."
           featureList={[
-            "Design responsivo;",
-            "Mobile-first;",
-            "Desenvolvido com React e Vite.",
+            "Design responsivo",
+            "Mobile-first",
+            "Desenvolvido com React e Vite",
           ]}
           repoLink="https://github.com/GracilianoOG/fementor-column-preview"
           previewLink="https://fementor-column-preview.vercel.app/"
@@ -38,9 +38,9 @@ function ProjectsSection() {
           projectName="mundo invertido"
           description="Página inspirada na série “Stranger Things”."
           featureList={[
-            "HTML Semântico;",
-            "Desenvolvido com Sass;",
-            "Botão de tema light e dark.",
+            "HTML Semântico",
+            "Desenvolvido com Sass",
+            "Botão de tema light e dark",
           ]}
           repoLink="https://github.com/GracilianoOG/dio-mundo-invertido"
           previewLink="https://gracilianoog.github.io/dio-mundo-invertido/"
@@ -50,9 +50,9 @@ function ProjectsSection() {
           projectName="Dio landing page"
           description="Landing Page sobre a trilha de CSS da Digital Innovation One."
           featureList={[
-            "HTML Semântico;",
-            "Layout responsivo;",
-            "Design elegante.",
+            "HTML Semântico",
+            "Layout responsivo",
+            "Design elegante",
           ]}
           repoLink="https://github.com/GracilianoOG/dio-desafio-css-landing-page"
           previewLink="https://gracilianoog.github.io/dio-desafio-css-landing-page/"
