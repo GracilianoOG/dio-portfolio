@@ -77,8 +77,3 @@ export const ButtonStyled = styled.a`
       }
     `}
 `;
-
-// export const FilledButtonStyled = styled(ButtonStyled)`
-//   background: black;
-//   color: white;
-// `;
