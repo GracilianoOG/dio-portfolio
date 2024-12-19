@@ -7,7 +7,7 @@ import iconLinkedin from "../assets/images/icons/linkedin.svg";
 import { devices } from "../utils/breakpoints";
 
 const ContactWrapperStyled = styled.section`
-  --border: 1px dashed var(--color-primary);
+  --border: 0.063rem dashed var(--color-primary);
   border-top: var(--border);
   border-bottom: var(--border);
   padding: 2rem 10px;
