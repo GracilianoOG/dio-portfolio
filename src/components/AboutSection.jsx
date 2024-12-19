@@ -63,10 +63,12 @@ function AboutSection() {
           <SocialLink
             imageSrc={githubIcon}
             href="https://github.com/GracilianoOG"
+            text="GitHub"
           />
           <SocialLink
             imageSrc={linkedin}
             href="https://www.linkedin.com/in/gabrielgmbarros"
+            text="LinkedIn"
           />
         </ButtonWrapper>
       </ContentWrapperStyled>
