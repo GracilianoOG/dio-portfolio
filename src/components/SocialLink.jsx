@@ -15,11 +15,11 @@ const LinkWrapperStyled = styled.a`
   }
 `;
 
-function SocialLink({ imageSrc, text, href }) {
+function SocialLink({ imageSrc, text, href, showText = false }) {
   return (
     <LinkWrapperStyled href={href}>
       <IconStyled src={imageSrc} alt="" />
-      {text && <span>{text}</span>}
+      {showText && <span>{text}</span>}
     </LinkWrapperStyled>
   );
 }
@@ -28,6 +28,7 @@ SocialLink.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   text: PropTypes.string,
   href: PropTypes.string.isRequired,
+  showText: PropTypes.bool,
 };
 
 export default SocialLink;
