@@ -26,7 +26,7 @@ function SocialLink({ imageSrc, text, href, showText = false }) {
 
 SocialLink.propTypes = {
   imageSrc: PropTypes.string.isRequired,
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
   showText: PropTypes.bool,
 };
