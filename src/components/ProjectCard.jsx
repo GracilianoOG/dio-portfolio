@@ -3,6 +3,16 @@ import styled from "styled-components";
 import { ButtonStyled } from "./styles/ButtonStyled";
 import { devices } from "../utils/breakpoints";
 
+const ProjectImage = styled.img`
+  max-height: 57vw;
+  object-fit: cover;
+  width: 100%;
+
+  @media screen and ${devices.lg} {
+    max-height: 36vw;
+  }
+`;
+
 const ProjectCardContent = styled.div`
   display: grid;
   gap: clamp(1rem, 3.5vw, 3rem);
@@ -15,20 +25,10 @@ const ProjectCardContent = styled.div`
     &:nth-child(even) {
       grid-template-columns: 1fr 2fr;
 
-      & > img {
+      & > ${ProjectImage} {
         order: 1;
       }
     }
-  }
-`;
-
-const ProjectImage = styled.img`
-  max-height: 57vw;
-  object-fit: cover;
-  width: 100%;
-
-  @media screen and ${devices.lg} {
-    max-height: 36vw;
   }
 `;
 
