@@ -41,11 +41,13 @@ function ContactSection() {
           imageSrc={iconGithub}
           text="GitHub"
           href="https://github.com/GracilianoOG"
+          showText={true}
         />
         <SocialLink
           imageSrc={iconLinkedin}
           text="LinkedIn"
           href="https://www.linkedin.com/in/gabrielgmbarros"
+          showText={true}
         />
       </LinksWrapperStyled>
       <ButtonStyled $filled href="mailto:gabriel.gracilianomb@gmail.com">
