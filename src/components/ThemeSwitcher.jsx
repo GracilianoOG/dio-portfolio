@@ -10,7 +10,7 @@ const LocalIconStyled = styled(IconStyled)`
 `;
 
 const ButtonStyled = styled.button`
-  border: 0.125rem solid transparent;
+  border: 0.125rem solid var(--color-background);
   background-color: transparent;
   border-radius: 50%;
   padding: 0.5rem;
