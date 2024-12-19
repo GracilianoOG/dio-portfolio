@@ -72,8 +72,10 @@ function ProjectCard({
         <ProjectTitle>{projectName}</ProjectTitle>
         <p>{description}</p>
         <ProjectFeatures>
-          {featureList.map((feat, index) => (
-            <li key={index}>{feat}</li>
+          {featureList.map((feat, index, arr) => (
+            <li key={index}>{`${feat}${
+              arr.length - 1 !== index ? ";" : "."
+            }`}</li>
           ))}
         </ProjectFeatures>
         <ButtonWrapperStyled>
