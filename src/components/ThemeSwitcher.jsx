@@ -9,7 +9,7 @@ const LocalIconStyled = styled(IconStyled)`
   transition: transform 0.5s;
 `;
 
-const ButtonStyled = styled.button`
+const ThemeSwitcherStyled = styled.button`
   border: 0.125rem solid var(--color-background);
   background-color: transparent;
   border-radius: 50%;
@@ -28,13 +28,13 @@ const ButtonStyled = styled.button`
 
 function ThemeSwitcher({ darkState, setDarkState }) {
   return (
-    <ButtonStyled
+    <ThemeSwitcherStyled
       onClick={() => setDarkState(prevDarkState => !prevDarkState)}
       aria-label="Tema escuro"
       aria-pressed={darkState}
     >
       <LocalIconStyled src={darkState ? darkIcon : lightIcon} alt="" />
-    </ButtonStyled>
+    </ThemeSwitcherStyled>
   );
 }
 
