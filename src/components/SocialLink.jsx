@@ -17,7 +17,7 @@ const LinkWrapperStyled = styled.a`
 
 function SocialLink({ imageSrc, text, href, showText = false }) {
   return (
-    <LinkWrapperStyled href={href}>
+    <LinkWrapperStyled href={href} aria-label={!showText ? text : null}>
       <IconStyled src={imageSrc} alt="" />
       {showText && <span>{text}</span>}
     </LinkWrapperStyled>
