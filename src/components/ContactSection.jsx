@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { ButtonStyled } from "./styles/ButtonStyled";
 import SectionTitleStyled from "./styles/SectionTitleStyled";
 import SocialLink from "./SocialLink";
 import iconGithub from "../assets/images/icons/github.svg";
 import iconLinkedin from "../assets/images/icons/linkedin.svg";
 import { devices } from "../utils/breakpoints";
+import EmailButton from "./EmailButton";
 
 const ContactWrapperStyled = styled.section`
   --border: 0.063rem dashed var(--color-primary);
@@ -50,9 +50,7 @@ function ContactSection() {
           showText={true}
         />
       </LinksWrapperStyled>
-      <ButtonStyled $filled href="mailto:gabriel.gracilianomb@gmail.com">
-        gabriel.gracilianomb@gmail.com
-      </ButtonStyled>
+      <EmailButton email="gabriel.gracilianomb@gmail.com" />
     </ContactWrapperStyled>
   );
 }
