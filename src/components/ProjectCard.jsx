@@ -67,7 +67,12 @@ function ProjectCard({
 }) {
   return (
     <ProjectCardContent>
-      <ProjectImage src={image} alt={description} aria-hidden="true" />
+      <ProjectImage
+        src={image}
+        alt={description}
+        aria-hidden="true"
+        loading="lazy"
+      />
       <ProjectContent>
         <ProjectTitle>{projectName}</ProjectTitle>
         <p>{description}</p>
