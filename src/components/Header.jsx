@@ -4,7 +4,7 @@ import MobileMenu from "./MobileMenu";
 import Menu from "./Menu";
 import PropTypes from "prop-types";
 import { devices } from "../utils/breakpoints";
-import { useEffect, useState } from "react";
+import useScreenChange from "../hooks/useScreenChange";
 
 const HeaderStyled = styled.header`
   align-items: center;
@@ -29,23 +29,10 @@ const TitleStyled = styled.h1`
 `;
 
 function Header(props) {
-  const [isMobile, setIsMobile] = useState(
-    !window.matchMedia(devices.lg).matches
-  );
-
-  useEffect(() => {
-    const mediaQueryList = window.matchMedia(devices.lg);
-    const handleScreenChange = () => setIsMobile(!mediaQueryList.matches);
-    mediaQueryList.addEventListener("change", handleScreenChange);
-
-    return () =>
-      mediaQueryList.removeEventListener("change", handleScreenChange);
-  }, []);
-
   return (
     <HeaderStyled>
       <TitleStyled>Gabriel graciliano</TitleStyled>
-      {isMobile ? <MobileMenu /> : <Menu />}
+      {useScreenChange() ? <MobileMenu /> : <Menu />}
       <ThemeSwitcher {...props} />
     </HeaderStyled>
   );
