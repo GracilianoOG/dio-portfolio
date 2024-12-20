@@ -11,7 +11,7 @@ const LinkStyled = styled.a`
   text-align: center;
   text-transform: uppercase;
 
-  & img {
+  & ${IconStyled} {
     margin-bottom: 0.188rem;
   }
 `;
