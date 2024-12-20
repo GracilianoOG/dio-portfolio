@@ -2,8 +2,9 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import IconStyled from "./styles/IconStyled";
 
-const LinkWrapperStyled = styled.a`
+const LinkStyled = styled.a`
   color: var(--color-primary);
+  display: block;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.625rem 0;
@@ -17,10 +18,12 @@ const LinkWrapperStyled = styled.a`
 
 function MobileLink({ imageSrc, children, href }) {
   return (
-    <LinkWrapperStyled href={href}>
-      <IconStyled src={imageSrc} alt="" />
-      <p>{children}</p>
-    </LinkWrapperStyled>
+    <li>
+      <LinkStyled href={href}>
+        <IconStyled src={imageSrc} alt="" />
+        <p>{children}</p>
+      </LinkStyled>
+    </li>
   );
 }
 
