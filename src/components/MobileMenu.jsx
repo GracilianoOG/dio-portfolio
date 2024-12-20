@@ -3,7 +3,6 @@ import homeIcon from "../assets/images/icons/mobile/home.svg";
 import capIcon from "../assets/images/icons/mobile/cap.svg";
 import codeIcon from "../assets/images/icons/mobile/code.svg";
 import mailIcon from "../assets/images/icons/mobile/mail.svg";
-import { devices } from "../utils/breakpoints";
 import MobileLink from "./MobileLink";
 
 const NavStyled = styled.nav`
@@ -16,10 +15,6 @@ const NavStyled = styled.nav`
   position: fixed;
   width: 100%;
   z-index: 1;
-
-  @media screen and ${devices.lg} {
-    display: none;
-  }
 `;
 
 function MobileMenu() {

@@ -1,13 +1,4 @@
 import styled from "styled-components";
-import { devices } from "../utils/breakpoints";
-
-const NavStyled = styled.nav`
-  display: none;
-
-  @media screen and ${devices.lg} {
-    display: initial;
-  }
-`;
 
 const ListStyled = styled.ul`
   display: flex;
@@ -41,7 +32,7 @@ const LinkStyled = styled.a`
 
 function Menu() {
   return (
-    <NavStyled>
+    <nav>
       <ListStyled>
         <li>
           <LinkStyled href="#top">Home</LinkStyled>
@@ -56,7 +47,7 @@ function Menu() {
           <LinkStyled href="#contact">Contato</LinkStyled>
         </li>
       </ListStyled>
-    </NavStyled>
+    </nav>
   );
 }
 
