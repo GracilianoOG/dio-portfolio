@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ThemeSwitcher from "./ThemeSwitcher";
 import MobileMenu from "./MobileMenu";
-import Menu from "./Menu";
+import DesktopMenu from "./DesktopMenu";
 import PropTypes from "prop-types";
 import { devices } from "../utils/breakpoints";
 import useScreenChange from "../hooks/useScreenChange";
@@ -32,7 +32,7 @@ function Header(props) {
   return (
     <HeaderStyled>
       <TitleStyled>Gabriel graciliano</TitleStyled>
-      {useScreenChange() ? <MobileMenu /> : <Menu />}
+      {useScreenChange() ? <MobileMenu /> : <DesktopMenu />}
       <ThemeSwitcher {...props} />
     </HeaderStyled>
   );
