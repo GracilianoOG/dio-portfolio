@@ -3,7 +3,7 @@ import homeIcon from "../assets/images/icons/mobile/home.svg";
 import capIcon from "../assets/images/icons/mobile/cap.svg";
 import codeIcon from "../assets/images/icons/mobile/code.svg";
 import mailIcon from "../assets/images/icons/mobile/mail.svg";
-import MobileLink from "./MobileLink";
+import MenuItem from "./MenuItem";
 
 const MobileListStyled = styled.ul`
   background-color: var(--color-background);
@@ -22,18 +22,18 @@ function MobileMenu() {
   return (
     <nav>
       <MobileListStyled>
-        <MobileLink href="#top" imageSrc={homeIcon}>
+        <MenuItem href="#top" imageSrc={homeIcon}>
           Home
-        </MobileLink>
-        <MobileLink href="#education" imageSrc={capIcon}>
+        </MenuItem>
+        <MenuItem href="#education" imageSrc={capIcon}>
           Formação
-        </MobileLink>
-        <MobileLink href="#projects" imageSrc={codeIcon}>
+        </MenuItem>
+        <MenuItem href="#projects" imageSrc={codeIcon}>
           Projetos
-        </MobileLink>
-        <MobileLink href="#contact" imageSrc={mailIcon}>
+        </MenuItem>
+        <MenuItem href="#contact" imageSrc={mailIcon}>
           Contato
-        </MobileLink>
+        </MenuItem>
       </MobileListStyled>
     </nav>
   );
