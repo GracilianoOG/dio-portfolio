@@ -30,7 +30,7 @@ const LinkStyled = styled.a`
   }
 `;
 
-function Menu() {
+function DesktopMenu() {
   return (
     <nav>
       <ListStyled>
@@ -51,4 +51,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default DesktopMenu;
