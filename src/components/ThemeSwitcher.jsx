@@ -29,7 +29,7 @@ const ThemeSwitcherStyled = styled.button`
 function ThemeSwitcher({ darkState, setDarkState }) {
   return (
     <ThemeSwitcherStyled
-      onClick={() => setDarkState(prevDarkState => !prevDarkState)}
+      onClick={setDarkState}
       aria-label="Tema escuro"
       aria-pressed={darkState}
     >
