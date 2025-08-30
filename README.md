@@ -8,7 +8,7 @@ Esse projeto faz parte dos desafios oferecidos nos bootcamps da Digital Innovati
 
 ![]() -->
 
-## 🗂️ Instalação e utilização
+## 📦 Instalação e utilização
 
 1. Clone este repositório:
 
@@ -28,7 +28,18 @@ npm install
 npm run dev
 ```
 
+## 📜 Scripts disponíveis
+
+| Script      | Comando                  | Descrição                                      |
+| ----------- | ------------------------ | ---------------------------------------------- |
+| `dev`       | `vite`                   | Inicia o site em modo de desenvolvimento       |
+| `build`     | `vite build`             | Prepara o site para deploy                     |
+| `lint`      | `eslint .`               | Verifica problemas no código                   |
+| `preview`   | `vite preview`           | Pré-visualiza o site antes do deploy           |
+
 ## 🛠️ Técnicas e tecnologias utilizadas
+
+[![Tool icons from skillicons](https://skillicons.dev/icons?i=react,styledcomponents,js,vite,vscode,npm)](https://skillicons.dev)
 
 - Projeto desenvolvido com `React` e `Vite`;
 - Componentes estilizados com `styled-components`;
@@ -49,5 +60,6 @@ npm run dev
 
 ## 🧑🏻‍💻 Autor
 
-- LinkedIn: [@gabrielgmbarros](https://www.linkedin.com/in/gabrielgmbarros)
-- GitHub: [@GracilianoOG](https://github.com/GracilianoOG)
+| [<img src="https://avatars.githubusercontent.com/u/72778164?s=96&v=4"><br><sub>GracilianoOG</sub>](https://github.com/GracilianoOG) |
+| :---------------------------------------------------------------------------------------------------------------------------------: |
+|                                       [Linkedin](https://www.linkedin.com/in/gabrielgmbarros)                                       |
