@@ -36,6 +36,7 @@ const AboutTitleStyled = styled.h2`
 
 const AboutTextStyled = styled.p`
   font-size: clamp(0.75rem, 1.75vw, 1.5rem);
+  font-style: italic;
   margin-bottom: 1.5rem;
 `;
 
