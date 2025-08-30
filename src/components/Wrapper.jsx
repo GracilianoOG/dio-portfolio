@@ -11,7 +11,7 @@ const WrapperStyled = styled.div`
   }
 
   @media screen and ${devices.lg} {
-    margin: 4rem auto;
+    margin: 4rem;
   }
 `;
 
