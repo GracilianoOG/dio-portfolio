@@ -10,7 +10,6 @@ const AboutSectionStyled = styled.section`
   display: flex;
   gap: 1.25rem;
   flex-direction: column;
-  text-align: center;
   justify-content: space-evenly;
 
   @media screen and ${devices.lg} {
@@ -30,24 +29,20 @@ const PhotoStyled = styled.img`
 
 const AboutTitleStyled = styled.h2`
   font-family: var(--font-family-secondary);
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 5rem);
   font-weight: 400;
   margin-bottom: 0.75rem;
 `;
 
 const AboutTextStyled = styled.p`
   font-size: clamp(0.75rem, 1.75vw, 1.5rem);
+  font-style: italic;
   margin-bottom: 1.5rem;
 `;
 
 const ButtonWrapper = styled.div`
   display: flex;
-  justify-content: center;
 `;
-
-// const ContentWrapperStyled = styled.div`
-//   flex: 1;
-// `;
 
 function AboutSection() {
   return (
