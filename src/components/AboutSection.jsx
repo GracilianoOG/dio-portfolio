@@ -11,6 +11,7 @@ const AboutSectionStyled = styled.section`
   gap: 1.25rem;
   flex-direction: column;
   text-align: center;
+  justify-content: space-evenly;
 
   @media screen and ${devices.lg} {
     flex-direction: row;
@@ -44,14 +45,14 @@ const ButtonWrapper = styled.div`
   justify-content: center;
 `;
 
-const ContentWrapperStyled = styled.div`
-  flex: 1;
-`;
+// const ContentWrapperStyled = styled.div`
+//   flex: 1;
+// `;
 
 function AboutSection() {
   return (
     <AboutSectionStyled id="about">
-      <ContentWrapperStyled>
+      <div>
         <AboutTitleStyled>
           Olá, eu sou o Gabriel, muito prazer!
         </AboutTitleStyled>
@@ -68,7 +69,7 @@ function AboutSection() {
             text="LinkedIn"
           />
         </ButtonWrapper>
-      </ContentWrapperStyled>
+      </div>
       <PhotoStyled
         src={photo}
         alt="Jovem branco na casa dos 20 anos, desenvolvedor do site, sorrindo para a câmera enquanto está em uma praia."
