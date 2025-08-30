@@ -26,6 +26,11 @@ const globalCSS = css`
   a {
     text-decoration: none;
   }
+
+  #root {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const variablesCSS = css`
