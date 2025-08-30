@@ -18,6 +18,7 @@ const AboutSectionStyled = styled.section`
 `;
 
 const PhotoStyled = styled.img`
+  border-radius: 50%;
   max-width: 25rem;
   width: 100%;
 
