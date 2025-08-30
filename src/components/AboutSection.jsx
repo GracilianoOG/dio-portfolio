@@ -50,10 +50,6 @@ const ContentWrapperStyled = styled.div`
 function AboutSection() {
   return (
     <AboutSectionStyled id="about">
-      <PhotoStyled
-        src={photo}
-        alt="Jovem branco na casa dos 20 anos, desenvolvedor do site, sorrindo para a câmera enquanto está em uma praia."
-      />
       <ContentWrapperStyled>
         <AboutTitleStyled>
           Olá, eu sou o Gabriel, muito prazer!
@@ -72,6 +68,10 @@ function AboutSection() {
           />
         </ButtonWrapper>
       </ContentWrapperStyled>
+      <PhotoStyled
+        src={photo}
+        alt="Jovem branco na casa dos 20 anos, desenvolvedor do site, sorrindo para a câmera enquanto está em uma praia."
+      />
     </AboutSectionStyled>
   );
 }
