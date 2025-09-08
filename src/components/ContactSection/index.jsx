@@ -7,7 +7,7 @@ import {
   ContactWrapperStyled,
   LinksWrapperStyled,
 } from "./styles";
-import SectionTitleStyled from "../styles/SectionTitleStyled";
+import SectionTitleStyled from "../../styles/SectionTitleStyled";
 
 function ContactSection() {
   return (

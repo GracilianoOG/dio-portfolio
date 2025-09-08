@@ -1,6 +1,6 @@
 import capIcon from "../../assets/images/icons/cap.svg";
 import PropTypes from "prop-types";
-import IconStyled from "../styles/IconStyled";
+import IconStyled from "../../styles/IconStyled";
 import { Card, CardContent, CardCourseStyled, CardDateStyled } from "./styles";
 
 function EducationCard({ course, location, date }) {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import IconStyled from "../styles/IconStyled";
+import IconStyled from "../../styles/IconStyled";
 
 export const LocalIconStyled = styled(IconStyled)`
   display: block;

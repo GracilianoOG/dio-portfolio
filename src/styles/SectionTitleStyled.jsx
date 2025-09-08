@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { devices } from "../../utils/breakpoints";
+import { devices } from "../utils/breakpoints";
 
 const SectionTitleStyled = styled.h2`
   font-size: clamp(2rem, 3.6vw, 3rem);

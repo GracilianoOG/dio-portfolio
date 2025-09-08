@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { devices } from "../../utils/breakpoints";
-import IconStyled from "../styles/IconStyled";
+import IconStyled from "../../styles/IconStyled";
 
 export const ItemIconStyled = styled(IconStyled)`
   @media screen and ${devices.mobileOnly} {

@@ -1,4 +1,4 @@
-import GlobalStyled from "./components/styles/GlobalStyled";
+import GlobalStyled from "./styles/GlobalStyled";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";

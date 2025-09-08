@@ -1,5 +1,5 @@
 import EducationCard from "../EducationCard";
-import SectionTitleStyled from "../styles/SectionTitleStyled";
+import SectionTitleStyled from "../../styles/SectionTitleStyled";
 import { SectionContent } from "./styles";
 
 function EducationSection() {

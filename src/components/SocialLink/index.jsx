@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import IconStyled from "../styles/IconStyled";
+import IconStyled from "../../styles/IconStyled";
 import { LinkWrapperStyled } from "./styles";
 
 function SocialLink({ imageSrc, text, href, showText = false }) {

@@ -1,5 +1,5 @@
 import { createGlobalStyle, css } from "styled-components";
-import { devices } from "../../utils/breakpoints";
+import { devices } from "../utils/breakpoints";
 
 const resetCSS = css`
   *,

@@ -1,6 +1,6 @@
 import ProjectCard from "../ProjectCard";
-import SectionTitleStyled from "../styles/SectionTitleStyled";
-import { ButtonStyled } from "../styles/ButtonStyled";
+import SectionTitleStyled from "../../styles/SectionTitleStyled";
+import { ButtonStyled } from "../../styles/ButtonStyled";
 import { projects } from "../../data/projects";
 import { ProjectsWrapperStyled } from "./styles";
 
