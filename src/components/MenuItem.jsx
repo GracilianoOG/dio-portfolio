@@ -27,6 +27,10 @@ const LinkStyled = styled.a`
     padding: 0.313rem;
     position: relative;
 
+    & ${IconStyled} {
+      display: none;
+    }
+
     &::before {
       --line-scale: 0;
       background-color: var(--color-primary);
