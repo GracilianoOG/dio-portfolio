@@ -1,8 +1,4 @@
-import styled from "styled-components";
-
-const FooterStyled = styled.footer`
-  text-align: center;
-`;
+import { FooterStyled } from "./styles";
 
 function Footer() {
   return (
