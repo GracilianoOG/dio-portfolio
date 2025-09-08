@@ -1,12 +1,11 @@
-import IconStyled from "../styles/IconStyled";
 import PropTypes from "prop-types";
-import { LinkStyled } from "./styles";
+import { ItemIconStyled, LinkStyled } from "./styles";
 
 function MenuItem({ imageSrc, children, href }) {
   return (
     <li>
       <LinkStyled href={href}>
-        {imageSrc && <IconStyled src={imageSrc} alt="" />}
+        {imageSrc && <ItemIconStyled src={imageSrc} alt="" />}
         <span>{children}</span>
       </LinkStyled>
     </li>
