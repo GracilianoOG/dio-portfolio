@@ -2,6 +2,16 @@ import styled from "styled-components";
 import { devices } from "../../utils/breakpoints";
 import IconStyled from "../styles/IconStyled";
 
+export const ItemIconStyled = styled(IconStyled)`
+  @media screen and ${devices.mobileOnly} {
+    margin-bottom: 0.188rem;
+  }
+
+  @media screen and ${devices.lg} {
+    display: none;
+  }
+`;
+
 export const LinkStyled = styled.a`
   color: var(--color-primary);
   padding: 0.625rem 0;
@@ -13,10 +23,6 @@ export const LinkStyled = styled.a`
     font-size: 0.75rem;
     font-weight: 600;
 
-    & ${IconStyled} {
-      margin-bottom: 0.188rem;
-    }
-
     & span {
       display: block;
     }
@@ -25,10 +31,6 @@ export const LinkStyled = styled.a`
   @media screen and ${devices.lg} {
     padding: 0.313rem;
     position: relative;
-
-    & ${IconStyled} {
-      display: none;
-    }
 
     &::before {
       --line-scale: 0;
