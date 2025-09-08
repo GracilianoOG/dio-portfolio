@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { ButtonStyled } from "./styles/ButtonStyled";
+import { ButtonStyled } from "../styles/ButtonStyled";
 
 function EmailButton({ email }) {
   return (
