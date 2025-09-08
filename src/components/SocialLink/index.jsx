@@ -1,19 +1,6 @@
-import styled from "styled-components";
 import PropTypes from "prop-types";
-import IconStyled from "./styles/IconStyled";
-
-const LinkWrapperStyled = styled.a`
-  align-items: center;
-  color: var(--color-primary);
-  display: flex;
-  gap: 0.375rem;
-  padding: 0.5rem;
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-`;
+import IconStyled from "../styles/IconStyled";
+import { LinkWrapperStyled } from "./styles";
 
 function SocialLink({ imageSrc, text, href, showText = false }) {
   return (
