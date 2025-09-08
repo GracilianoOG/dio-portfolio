@@ -1,0 +1,24 @@
+import styled from "styled-components";
+import { devices } from "../../utils/breakpoints";
+
+export const HeaderStyled = styled.header`
+  align-items: center;
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.25rem;
+  padding: 2rem 0;
+  z-index: 1;
+
+  @media screen and ${devices.lg} {
+    position: sticky;
+    top: 0;
+  }
+`;
+
+export const TitleStyled = styled.h1`
+  font-family: var(--font-family-secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: capitalize;
+`;
