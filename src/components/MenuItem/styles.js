@@ -38,12 +38,12 @@ export const LinkStyled = styled.a`
       bottom: 0;
       content: "";
       height: 0.125rem;
-      left: 0;
+      left: 50%;
       position: absolute;
       transition: transform 0.4s;
-      transform: scaleX(var(--line-scale));
+      transform: translateX(-50%) scaleX(var(--line-scale));
       transform-origin: center;
-      width: 100%;
+      width: min(100%, 2.1875rem);
     }
 
     &:hover::before {
