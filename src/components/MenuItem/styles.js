@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import IconStyled from "./styles/IconStyled";
-import PropTypes from "prop-types";
-import { devices } from "../utils/breakpoints";
+import { devices } from "../../utils/breakpoints";
+import IconStyled from "../styles/IconStyled";
 
-const LinkStyled = styled.a`
+export const LinkStyled = styled.a`
   color: var(--color-primary);
   padding: 0.625rem 0;
   text-align: center;
@@ -50,22 +49,3 @@ const LinkStyled = styled.a`
     }
   }
 `;
-
-function MenuItem({ imageSrc, children, href }) {
-  return (
-    <li>
-      <LinkStyled href={href}>
-        {imageSrc && <IconStyled src={imageSrc} alt="" />}
-        <span>{children}</span>
-      </LinkStyled>
-    </li>
-  );
-}
-
-MenuItem.propTypes = {
-  imageSrc: PropTypes.string,
-  children: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-};
-
-export default MenuItem;
