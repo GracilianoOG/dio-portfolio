@@ -1,18 +1,8 @@
-import ProjectCard from "./ProjectCard";
-import SectionTitleStyled from "./styles/SectionTitleStyled";
-import styled from "styled-components";
-import { ButtonStyled } from "./styles/ButtonStyled";
-import { devices } from "../utils/breakpoints";
-import { projects } from "../data/projects";
-
-const ProjectsWrapperStyled = styled.div`
-  display: grid;
-  gap: 2.5rem;
-
-  @media screen and ${devices.lg} {
-    gap: 4rem;
-  }
-`;
+import ProjectCard from "../ProjectCard";
+import SectionTitleStyled from "../styles/SectionTitleStyled";
+import { ButtonStyled } from "../styles/ButtonStyled";
+import { projects } from "../../data/projects";
+import { ProjectsWrapperStyled } from "./styles";
 
 function ProjectsSection() {
   return (
