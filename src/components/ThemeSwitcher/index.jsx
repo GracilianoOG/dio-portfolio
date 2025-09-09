@@ -1,23 +1,20 @@
-import PropTypes from "prop-types";
 import darkIcon from "../../assets/images/icons/moon.svg";
 import lightIcon from "../../assets/images/icons/sun.svg";
 import { LocalIconStyled, ThemeSwitcherStyled } from "./styles";
+import { ThemeContext, useTheme } from "styled-components";
 
-function ThemeSwitcher({ darkState, setDarkState }) {
+function ThemeSwitcher() {
+  const { isDark, toggleTheme } = useTheme(ThemeContext);
+
   return (
     <ThemeSwitcherStyled
-      onClick={setDarkState}
+      onClick={toggleTheme}
       aria-label="Tema escuro"
-      aria-pressed={darkState}
+      aria-pressed={isDark}
     >
-      <LocalIconStyled src={darkState ? darkIcon : lightIcon} alt="" />
+      <LocalIconStyled src={isDark ? darkIcon : lightIcon} alt="" />
     </ThemeSwitcherStyled>
   );
 }
-
-ThemeSwitcher.propTypes = {
-  setDarkState: PropTypes.func.isRequired,
-  darkState: PropTypes.bool.isRequired,
-};
 
 export default ThemeSwitcher;
