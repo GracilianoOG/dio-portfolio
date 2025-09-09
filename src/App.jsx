@@ -3,10 +3,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Content from "./components/Content";
-import useThemePreference from "./hooks/useThemePreference";
+import useThemes from "./hooks/useThemes";
 
 function App() {
-  const [darkState, setDarkState] = useThemePreference();
+  const [darkState, setDarkState] = useThemes();
 
   return (
     <>
