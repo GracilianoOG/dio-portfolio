@@ -42,8 +42,8 @@ const variablesCSS = css`
     --color-mobile-line: #b6b6b6;
     --icon-filter: none;
 
-    ${props =>
-      props.$isDarkMode &&
+    ${({ theme }) =>
+      theme.isDark &&
       css`
         --color-background: #1c1c1c;
         --color-primary: #ffffff;
