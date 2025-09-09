@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
 const getTheme = () => {
-  const localTheme = localStorage.getItem("theme");
-  const darkMedia = "(prefers-color-scheme: dark)";
-  const systemTheme = matchMedia(darkMedia).matches ? "dark" : "light";
-  return localTheme ?? systemTheme;
+  let loadedTheme = localStorage.getItem("theme");
+  if (!loadedTheme) {
+    const darkMedia = "(prefers-color-scheme: dark)";
+    loadedTheme = matchMedia(darkMedia).matches ? "dark" : "light";
+  }
+  return loadedTheme;
 };
 
 function useThemes() {
