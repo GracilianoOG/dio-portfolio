@@ -35,21 +35,28 @@ const globalCSS = css`
 
 const variablesCSS = css`
   :root {
-    --color-background: #f6f6f6;
-    --color-primary: #1c1c1c;
-    --color-secondary: #ffffff;
-    --color-tertiary: #363636;
-    --color-mobile-line: #b6b6b6;
+    --color-white: #ffffff;
+    --color-almost-black: #1c1c1c;
+    --color-very-light-gray: #f6f6f6;
+    --color-very-dark-gray: #363636;
+    --color-dark-gray: #9a9a9c;
+    --color-gray: #b6b6b6;
+
+    --color-background: var(--color-very-light-gray);
+    --color-primary: var(--color-almost-black);
+    --color-secondary: var(--color-white);
+    --color-tertiary: var(--color-very-dark-gray);
+    --color-mobile-line: var(--color-gray);
     --icon-filter: none;
 
     ${({ theme }) =>
       theme.isDark &&
       css`
-        --color-background: #1c1c1c;
-        --color-primary: #ffffff;
-        --color-secondary: #1c1c1c;
-        --color-tertiary: #9a9a9c;
-        --color-mobile-line: #b6b6b6;
+        --color-background: var(--color-almost-black);
+        --color-primary: var(--color-white);
+        --color-secondary: var(--color-almost-black);
+        --color-tertiary: var(--color-dark-gray);
+        --color-mobile-line: var(--color-gray);
         --icon-filter: invert(1);
       `}
 
