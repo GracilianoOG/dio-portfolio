@@ -4,18 +4,21 @@ import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Content from "./components/Content";
 import useThemes from "./hooks/useThemes";
+import { ThemeProvider } from "styled-components";
 
 function App() {
-  const [darkState, setDarkState] = useThemes();
+  const [isDark, toggleTheme] = useThemes();
 
   return (
     <>
-      <GlobalStyled $isDarkMode={darkState} />
-      <Wrapper>
-        <Header darkState={darkState} setDarkState={setDarkState} />
-        <Content />
-        <Footer />
-      </Wrapper>
+      <ThemeProvider theme={{ isDark, toggleTheme }}>
+        <GlobalStyled />
+        <Wrapper>
+          <Header />
+          <Content />
+          <Footer />
+        </Wrapper>
+      </ThemeProvider>
     </>
   );
 }
