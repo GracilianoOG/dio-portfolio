@@ -1,6 +1,6 @@
-import ThemeSwitcher from "../ThemeSwitcher";
+import ThemeSwitcher from "../../components/ThemeSwitcher";
 import { HeaderStyled, TitleStyled } from "./styles";
-import NavMenu from "../NavMenu";
+import NavMenu from "../../components/NavMenu";
 
 function Header() {
   return (

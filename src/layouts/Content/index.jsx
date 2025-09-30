@@ -1,7 +1,7 @@
-import AboutSection from "../AboutSection";
-import EducationSection from "../EducationSection";
-import ProjectsSection from "../ProjectsSection";
-import ContactSection from "../ContactSection";
+import AboutSection from "../../components/AboutSection";
+import EducationSection from "../../components/EducationSection";
+import ProjectsSection from "../../components/ProjectsSection";
+import ContactSection from "../../components/ContactSection";
 import { MainContentStyled } from "./styles";
 
 function Content() {
