@@ -14,12 +14,20 @@ export const AboutSectionStyled = styled.section`
 `;
 
 export const PhotoStyled = styled.img`
+  align-self: start;
   border-radius: 50%;
-  max-width: 25rem;
+  max-width: max(35vw, 12.5rem);
+  order: -1;
   width: 100%;
 
+  @media screen and ${devices.md} {
+    max-width: max(40vw, 18.75rem);
+  }
+
   @media screen and ${devices.lg} {
+    align-self: unset;
     max-width: min(31.25rem, 38.11%);
+    order: 0;
   }
 `;
 
