@@ -27,7 +27,7 @@ export const AboutTitleStyled = styled.h2`
   font-family: var(--font-family-secondary);
   font-size: clamp(1rem, 5vw, 5rem);
   font-weight: 500;
-  margin-bottom: 0.75rem;
+  margin-bottom: 2rem;
 `;
 
 export const AboutTextStyled = styled.p`
