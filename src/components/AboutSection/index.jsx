@@ -17,7 +17,11 @@ function AboutSection() {
         <AboutTitleStyled>
           Olá, eu sou o Gabriel, muito prazer!
         </AboutTitleStyled>
-        <AboutTextStyled>Apaixonado por tecnologia e inovação.</AboutTextStyled>
+        <AboutTextStyled>
+          Formado como técnico em informática pela ETE Paracambi e técnico em
+          informática para a internet pelo IFRJ de Paulo de Frontin. Atualmente
+          cursando Análise e Desenvolvimento de Sistemas pela Faeterj Paracambi.
+        </AboutTextStyled>
         <ButtonWrapper>
           <SocialLink
             imageSrc={githubIcon}
