@@ -1,8 +1,8 @@
 import GlobalStyled from "./styles/GlobalStyled";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
-import Content from "./components/Content";
+import Header from "./layouts/Header";
+import Footer from "./layouts/Footer";
+import Wrapper from "./layouts/Wrapper";
+import Content from "./layouts/Content";
 import useThemes from "./hooks/useThemes";
 import { ThemeProvider } from "styled-components";
 
