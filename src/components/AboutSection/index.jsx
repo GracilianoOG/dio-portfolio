@@ -16,7 +16,7 @@ function AboutSection() {
     <AboutSectionStyled id="about">
       <div>
         <AboutTitleStyled>
-          Olá, muito prazer! Me chamo{" "}
+          Muito prazer! Me chamo{" "}
           <UnderlineStyled>Gabriel Graciliano</UnderlineStyled>.
         </AboutTitleStyled>
         <AboutTextStyled>
