@@ -40,3 +40,7 @@ export const AboutTextStyled = styled.p`
 export const ButtonWrapper = styled.div`
   display: flex;
 `;
+
+export const UnderlineStyled = styled.span`
+  text-decoration: underline;
+`;
