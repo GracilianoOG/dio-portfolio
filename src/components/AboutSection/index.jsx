@@ -15,7 +15,7 @@ function AboutSection() {
     <AboutSectionStyled id="about">
       <div>
         <AboutTitleStyled>
-          Olá, eu sou o Gabriel, muito prazer!
+          Olá, muito prazer! Me chamo Gabriel Graciliano.
         </AboutTitleStyled>
         <AboutTextStyled>
           Formado como técnico em informática pela ETE Paracambi e técnico em
