@@ -31,9 +31,10 @@ export const AboutTitleStyled = styled.h2`
 `;
 
 export const AboutTextStyled = styled.p`
-  font-size: clamp(0.75rem, 1.75vw, 1.5rem);
-  font-style: italic;
+  font-size: clamp(0.75rem, 1.75vw, 1.25rem);
+  line-height: 1.4;
   margin-bottom: 1.5rem;
+  max-width: 37.5rem;
 `;
 
 export const ButtonWrapper = styled.div`
