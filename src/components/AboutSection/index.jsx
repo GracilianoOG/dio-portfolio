@@ -8,6 +8,7 @@ import {
   AboutTitleStyled,
   ButtonWrapper,
   PhotoStyled,
+  UnderlineStyled,
 } from "./styles";
 
 function AboutSection() {
@@ -15,7 +16,8 @@ function AboutSection() {
     <AboutSectionStyled id="about">
       <div>
         <AboutTitleStyled>
-          Olá, muito prazer! Me chamo Gabriel Graciliano.
+          Olá, muito prazer! Me chamo{" "}
+          <UnderlineStyled>Gabriel Graciliano</UnderlineStyled>.
         </AboutTitleStyled>
         <AboutTextStyled>
           Formado como técnico em informática pela ETE Paracambi e técnico em
