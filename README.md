@@ -4,10 +4,6 @@
 
 Esse projeto faz parte dos desafios oferecidos nos bootcamps da Digital Innovation One. O desafio consiste em desenvolver um site de portfolio a partir de um design já pronto ou criado pelo próprio desenvolvedor. O projeto foi desenvolvido com React em conjunto com Styled Components. O design foi desenvolvido por mim utilizando o Figma.
 
-<!-- ## 📷 Showcase
-
-![]() -->
-
 ## 📦 Instalação e utilização
 
 1. Clone este repositório:
@@ -39,7 +35,7 @@ npm run dev
 
 ## 🛠️ Técnicas e tecnologias utilizadas
 
-[![Tool icons from skillicons](https://skillicons.dev/icons?i=react,styledcomponents,js,vite,vscode,npm)](https://skillicons.dev)
+[![Ícones das tecnologias do projeto](https://skillicons.dev/icons?i=react,styledcomponents,js,vite,vscode,npm)](https://skillicons.dev)
 
 - Projeto desenvolvido com `React` e `Vite`;
 - Componentes estilizados com `styled-components`;
@@ -47,6 +43,7 @@ npm run dev
 - Layout `responsivo` para diferentes dispositivos;
 - Site estruturado de forma `semântica` e `acessível`;
 - Mockups de projetos criados com `Canva`.
+- Tipagem das propriedades dos componentes feita com `prop types`.
 
 ## 🔗 Links úteis e de estudos
 
